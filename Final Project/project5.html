@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" href="https://img.fortawesome.com/1ce05b4b/start-illustration.svg">
+</head>
+<body>
+    <form action="" autocomplete="on" method="post">
+        <fieldset>
+        <legend>Personal details</legend>
+         <table>
+            <tr>
+                <td><label for="fname" >First Name</label></td>
+                <td><input type="text" name="fname" id="fname" placeholder="Ex :Meghna" required> </td>
+            </tr>
+            <tr>
+                <td><label for="sname">Surname</label></td>
+                <td><input type="text" name="sname" id="sname"></td>
+            </tr>
+            <tr>
+                <td><label for="mobno">Mobile number</label></td>
+                <td><input type="number" name="mobno" id="mobno"placeholder="Enter Mobile Number" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" placeholder="example@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td> <input type="password" name="password" id="password" placeholder="example123" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="confirmpassword">Confirm Password</label></td>
+                <td><input type="password" name="confirmpassword" id="confirmpassword" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label></td>
+                <td> <input type="date" name="dob" id="dob" required></td>
+            </tr>
+            <tr>
+                <td> <label for="age">Age</label></td>
+                <td><input type="number" name="age" id="age" min="18" max="50" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td> <input type="radio" name="gender" value="male"> <label>Male</label>
+                <input type="radio" name="gender" value="female"> <label>Female</label>
+                <input type="radio" name="gender" value="other"> <label>Other</label></td>
+            </tr>
+            <tr>
+                <td><label for="selection">Select Country</label></td>
+                <td><select name="selection" id="selection"><option value="india">India</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option></select></td>
+            </tr>
+            <tr>
+                <td><label for="upload">Upload Pic</label></td>
+                <td><input type="file" name="upload" id="upload"></td>
+            </tr>
+            
+
+        </table>   
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                <label for="course">Select Course</label>
+                    <td><select name="course" id="course">
+                        <option value="Java">Java Full Stack</option>
+                        <option value="Python">Python Full Stack</option>
+                        <option value="React">React Full Stack</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <label for="mode"> Delivery Mode</label>
+                       <input type="radio" name="mode" value="online"><label>Online</label>
+                       <input type="radio" name="mode" value="offline"><label>Offline</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="institute">Institute name</label>
+                        <input type="text" name="institute" id="institute" value="TAP ACADEMY" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+                        
+            </table>
+        </fieldset>
+        <br />
+        <label for="feedback">FEEDBACK</label><br/>
+         <textarea name="feedback" id="feedback" rows="5" cols="50" style="resize: none;"></textarea>
+         <br />
+          <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+      
+
